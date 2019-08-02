@@ -1,0 +1,7 @@
+bs4
+selenium
+wget
+
+pylama
+pdbpp
+yapf
