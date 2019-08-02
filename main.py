@@ -26,6 +26,7 @@ if __name__ == '__main__':
     pdb.set_trace()
 
     future_to_file = []
+    # I/O bound but wget is not compatible with asyncio therefore we use threading
     with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         for level in LEVELS:
             url = INIT_URL + level
